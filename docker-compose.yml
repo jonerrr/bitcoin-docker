@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  bitcoin:
+    build: .
+    ports:
+      - "8332:8332"
+      - "8333:8333"
+    volumes:
+      - ./data:/data
